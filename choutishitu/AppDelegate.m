@@ -7,6 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import "LeftSortsViewController.h"
+#import "ZHZTabBarVC.h"
+
+
 
 @interface AppDelegate ()
 
@@ -16,8 +20,17 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
-    return YES;
+
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];   //设置通用背景颜色
+    [self.window makeKeyAndVisible];
+    
+    LeftSortsViewController *leftVC = [[LeftSortsViewController alloc] init];
+    ZHZTabBarVC *vc = [[ZHZTabBarVC alloc]init];
+     self.mainNavigationController = [[UINavigationController alloc]initWithRootViewController:vc];
+     self.LeftSlideVC = [[LeftSlideViewController alloc]initWithLeftView:leftVC andMainView:self.mainNavigationController];
+     self.window.rootViewController = self.LeftSlideVC;
+     return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
