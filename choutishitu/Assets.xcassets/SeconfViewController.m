@@ -7,18 +7,33 @@
 //
 
 #import "SeconfViewController.h"
-
+#import "HYCircleLoadingView.h"
 @interface SeconfViewController ()
-
+{
+    HYCircleLoadingView *View;
+}
 @end
 
 @implementation SeconfViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.automaticallyAdjustsScrollViewInsets = NO;
+     View = [[HYCircleLoadingView alloc]initWithFrame:CGRectMake(0,100, 100, 100)];
+    
+    [self.view addSubview:View];
+    UIBarButtonItem *rightBtn = [[UIBarButtonItem alloc]initWithTitle:@"测试1" style:UIBarButtonItemStylePlain target:self action:@selector(regis)];
+    self.navigationItem.rightBarButtonItem = rightBtn;
+    
 }
-
+-(void)regis{
+    if (View.isAnimating) {
+        [View stopAnimation];
+        return;
+    }
+    [View startAnimation];
+    
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

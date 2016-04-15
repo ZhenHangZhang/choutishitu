@@ -20,6 +20,11 @@
     self.view.backgroundColor = [UIColor whiteColor];
     UIBarButtonItem *rightBtn = [[UIBarButtonItem alloc]initWithTitle:@"测试2" style:UIBarButtonItemStylePlain target:self action:@selector(regis)];
     self.navigationItem.rightBarButtonItem = rightBtn;
+    
+    
+    
+    
+    
   }
 -(void)regis{
     ZHZTViewController *vc = [[ZHZTViewController alloc]init];

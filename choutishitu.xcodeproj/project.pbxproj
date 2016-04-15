@@ -118,6 +118,7 @@
 		9256DA721CAD2D7F000D8583 /* FourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9256DA711CAD2D7F000D8583 /* FourViewController.m */; };
 		9256DA761CAD34E0000D8583 /* ZHZOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9256DA751CAD34E0000D8583 /* ZHZOViewController.m */; };
 		9256DA791CAD34EE000D8583 /* ZHZTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9256DA781CAD34EE000D8583 /* ZHZTViewController.m */; };
+		9267A6141CAE60B40037DE0E /* HYCircleLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9267A6131CAE60B40037DE0E /* HYCircleLoadingView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -280,6 +281,8 @@
 		9256DA751CAD34E0000D8583 /* ZHZOViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHZOViewController.m; sourceTree = "<group>"; };
 		9256DA771CAD34EE000D8583 /* ZHZTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHZTViewController.h; sourceTree = "<group>"; };
 		9256DA781CAD34EE000D8583 /* ZHZTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHZTViewController.m; sourceTree = "<group>"; };
+		9267A6121CAE60B40037DE0E /* HYCircleLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYCircleLoadingView.h; sourceTree = "<group>"; };
+		9267A6131CAE60B40037DE0E /* HYCircleLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYCircleLoadingView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -855,6 +858,8 @@
 		9256DA731CAD34B7000D8583 /* test */ = {
 			isa = PBXGroup;
 			children = (
+				9267A6121CAE60B40037DE0E /* HYCircleLoadingView.h */,
+				9267A6131CAE60B40037DE0E /* HYCircleLoadingView.m */,
 				9256DA741CAD34E0000D8583 /* ZHZOViewController.h */,
 				9256DA751CAD34E0000D8583 /* ZHZOViewController.m */,
 				9256DA771CAD34EE000D8583 /* ZHZTViewController.h */,
@@ -1092,6 +1097,7 @@
 				9256DA441CAD2850000D8583 /* ZHZTabBarVC.m in Sources */,
 				9256DA501CAD28D8000D8583 /* UIImage+Extension.m in Sources */,
 				9256D96C1CAD2774000D8583 /* otherViewController.m in Sources */,
+				9267A6141CAE60B40037DE0E /* HYCircleLoadingView.m in Sources */,
 				9256DA511CAD28D8000D8583 /* UIView+Extension.m in Sources */,
 				9256DA5C1CAD28EA000D8583 /* UIBarButtonItem+Extension.m in Sources */,
 				9256DA721CAD2D7F000D8583 /* FourViewController.m in Sources */,
@@ -1326,6 +1332,7 @@
 				9256D9591CAD271C000D8583 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9256D95A1CAD271C000D8583 /* Build configuration list for PBXNativeTarget "choutishituTests" */ = {
 			isa = XCConfigurationList;
@@ -1334,6 +1341,7 @@
 				9256D95C1CAD271C000D8583 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9256D95D1CAD271C000D8583 /* Build configuration list for PBXNativeTarget "choutishituUITests" */ = {
 			isa = XCConfigurationList;
@@ -1342,6 +1350,7 @@
 				9256D95F1CAD271C000D8583 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
